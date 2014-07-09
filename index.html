@@ -15,7 +15,7 @@ title: 云淡天高
                 {% for post in paginator.posts %}
                 <li>
                     <span>{{ post.date | date: "%Y-%m-%d" }}</span>
-                    <a href="/blog{{ post.url }}"><h3>{{ post.title }}</h3></a>
+                    <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
                     <div>
                         {{ post.content |truncatehtml | truncatewords: 30 }}
                     </div>
