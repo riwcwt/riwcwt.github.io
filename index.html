@@ -17,7 +17,7 @@ title: 云淡天高
                     <span>{{ post.date | date: "%Y-%m-%d" }}</span>
                     <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
                     <div>
-                        {{ post.content |truncatehtml | truncatewords: 5 }}
+                        {{ post.content |truncatehtml | truncatewords: 3 }}
                     </div>
                 </li>
                 {% endfor %}
