@@ -1869,7 +1869,7 @@ header .container ul {
 }
 header .container ul li {
     float: left;
-    background: #333;
+    background: transparent;
     line-height: 40px;
     margin-left: 15px;
     margin-right: 15px;
@@ -1882,4 +1882,12 @@ header .container ul li:hover {
 header .container ul li a {
     text-decoration: none;
     color: white;
+}
+
+.entries>li>a{
+	float: left;
+}
+.entries>li>span{
+	float: right;
+	line-height: 40px;
 }

@@ -14,11 +14,11 @@ title: 云淡天高
             <ul class="entries">
                 {% for post in paginator.posts %}
                 <li>
-                    <span>{{ post.date | date: "%Y-%m-%d" }}</span>
-                    <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
-                    <div>
+                    <a href="{{ post.url }}"><h5>{{ post.title }}</h5></a>
+					<span>{{ post.date | date: "%Y-%m-%d" }}</span>
+                    <!--<div>
                         {{ post.content |truncatehtml | truncatewords: 3 }}
-                    </div>
+                    </div>-->
                 </li>
                 {% endfor %}
             </ul>
