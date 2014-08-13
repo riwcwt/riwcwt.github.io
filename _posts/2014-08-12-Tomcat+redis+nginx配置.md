@@ -9,7 +9,7 @@ title: Tomcat+redis+nginx配置
 
 现在程序基本稳定，压力测试也都能没什么大的问题，趁着有时间，把部署和配置都整理一下。
 
-## 准备 ##
+### 准备 ###
 
 apache tomcat 7.0.55
 
@@ -25,7 +25,7 @@ redis 2.8.9
 
 在这个图中，nginx做为反向代理，将客户请求根据权重随机分配给三台tomcat服务器，redis做为三台tomcat的共享session数据服务器。
 
-## 规划 ##
+### 规划 ###
 
 **redis**
 	
@@ -41,7 +41,7 @@ redis 2.8.9
 	localhost:8082
 	localhost:8083
 
-## 配置 ##
+### 配置 ###
 
 **tomcat**
 
@@ -127,7 +127,7 @@ conf/server.xml文件中的端口根据规划依次修改
 
 redis的配置就直接使用默认配置，因为只是测试用，和tomcat一样没有做参数优化配置。
 
-## 运行 ##
+### 运行 ###
 
 分别启动redis、nginx和三台tomcat。
 
@@ -137,7 +137,7 @@ redis的配置就直接使用默认配置，因为只是测试用，和tomcat一
 
 ![tomcat](/img/tomcat-cluster.jpg)
 
-## 测试 ##
+### 测试 ###
 
 在三个tomcat的webapps/ROOT目录下，分别添加session.jsp
 
