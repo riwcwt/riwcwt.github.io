@@ -54,7 +54,15 @@ redis 2.8.9
          database="0" 
          maxInactiveInterval="60" />
 
-conf/server.xml文件中的端口根据规划依次修改
+conf/server.xml文件中的端口根据规划依次修改。
+
+另外要在tomcat的lib文件夹下分别添加三个jar文件，这个地方jar文件的版本有可能会有冲突，配置的时候需要多尝试。我这里的版本如下，是验证过可以使用的。
+
+tomcat-redis-session-manager-1.2-tomcat-7.jar
+
+jedis-2.2.0.jar
+
+commons-pool-1.6.jar
 
 **nginx**
 
