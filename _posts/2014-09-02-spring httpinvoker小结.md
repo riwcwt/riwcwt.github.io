@@ -1,3 +1,8 @@
+---
+layout: article
+title: spring httpinvoker小结
+---
+
 在最近给客户做的两个系统之间，有一些需要相互调用的地方，因为两个系统的架构基本相同，都是采用的spring mvc + mybatis,所以尝试使用了一下spring httpinvoker。目前系统访问平稳，用户量也不是很大，没有出现什么问题。
 
 现在常见的远程调用，主要有RMI、 spring httpinvoker、 hessian、 burlap、 web services、 protobuf等。各种方式都有自己的优缺点，网上有很多相关的对比，这里就不再赘述。但是对于两个都是java开发的系统而言，spring httpinvoker应该是综合了传输效率和开发效率的比较好的方式。
