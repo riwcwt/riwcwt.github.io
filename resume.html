@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html class="ie7" lang="zh"><![endif]-->
+<!--[if gt IE 7]><!-->
+<html lang="zh">
+<!--<![endif]-->
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>时光轴</title>
+<link href="resources/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div class="content">
+		<div class="wrapper">
+			<div class="light">
+				<i></i>
+			</div>
+			<hr class="line-left">
+			<hr class="line-right">
+			<div class="main">
+				<h1 class="title">个人简历</h1>
+				<div class="year">
+					<h2>
+						<a href="http://riwcwt.github.io/">2010年<i></i></a>
+					</h2>
+					<div class="list">
+						<ul>
+							<li class="cls highlight">
+								<p class="date">7月</p>
+								<p class="intro">毕业</p>
+								<p class="version">&nbsp;</p>
+								<div class="more">
+									<p>华中科技大学</p>
+									<p>软件工程</p>
+									<p>本科</p>
+								</div>
+							</li>
+							<li class="cls">
+								<p class="date">8月</p>
+								<p class="intro">加入凯捷咨询</p>
+								<p class="version">&nbsp;</p>
+								<div class="more">
+									<p>2009/08--2010/05 凯捷咨询有限公司-实习生</p>
+									<p>Java编程语言培训</p>
+									<p>Oracle EBS开发培训 - PL/SQL、JDeveloper、Form Builder</p>
+								</div>
+							</li>
+							<li class="cls">
+								<p class="date">10月</p>
+								<p class="intro">加入中兴PA/PC项目组 - 凯捷咨询</p>
+								<p class="version">&nbsp;</p>
+								<div class="more">
+									<p>Oracle EBS的项目会计和项目合同模块的技术开发</p>
+									<p>主要使用到PL/SQL/、Form开发</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="year">
+					<h2>
+						<a href="#">2011年<i></i></a>
+					</h2>
+					<div class="list">
+						<ul>
+							<li class="cls">
+								<p class="date">5月</p>
+								<p class="intro">华润999 ERP项目实施 - 凯捷咨询</p>
+								<p class="version">&nbsp;</p>
+								<div class="more">
+									<p>根据需求，进行Oracle EBS的二次开发</p>
+									<p>为客户做Web ADI和报表开发的培训</p>
+									<p>涉及到Oracle EBS的财务、分销、采购和质量等模块</p>
+									<p>相关的技术和工具：Form/PL SQL/Java/WEB ADI/BI Publisher/OAF</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="year">
+					<h2>
+						<a href="#">2012年<i></i></a>
+					</h2>
+					<div class="list">
+						<ul>
+							<li class="cls">
+								<p class="date">1月</p>
+								<p class="intro">加入华为软件</p>
+								<p class="version">&nbsp;</p>
+								<div class="more">
+									<p>参与电信行业的商业智能系统BICP的开发</p>
+									<p>将现有BI系统，开发Mobile版本，包括iPhone、Android等平台(基于web)</p>
+									<p>开发BI系统核心平台</p>
+									<p>使用Java、spring、jQuery、jQuery Mobile、PhoneGap进行开发</p>
+								</div>
+							</li>
+							<li class="cls">
+								<p class="date">10月</p>
+								<p class="intro">加入戴尔服务</p>
+								<p class="version">&nbsp;</p>
+								<div class="more">
+									<p>进入东方航空E-HR系统建设项目</p>
+									<p>参与员工绩效、主数据管理和web services平台、东航内网门户、员工自助平台等开发</p>
+									<p>员工自助系统，使用java、spring mvc、jquery等插件</p>
+									<p>绩效系统，采用java、spring mvc、mybatis、sea.js、jquery等插件</p>
+									<p>主数据管理平台和web services平台，采用java、jquery、bootstrap\spring、apache cxf、mybatis</p>
+									<p>BI报表平台，采用java、dojo、jquery officebar</p>
+									<p>东航内网门户系统，采用java、kissy\kissy chart、bootstrap、bui等进行开发</p>
+								</div>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="resources/scripts/jquery-2.1.1.min.js"></script>
+	<script>
+		$(".main .year .list").each(function(e, target) {
+			var $target = $(target), $ul = $target.find("ul");
+			$target.height($ul.outerHeight()), $ul.css("position", "absolute");
+		});
+		$(".main .year>h2>a").click(function(e) {
+			e.preventDefault();
+			$(this).parents(".year").toggleClass("close");
+		});
+	</script>
+</body>
+</html>
