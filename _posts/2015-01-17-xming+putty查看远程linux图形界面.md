@@ -10,6 +10,7 @@ title: xming+putty查看远程linux图形界面
 ### linux服务器端配置 ###
 
     #vi /etc/ssh/sshd_config
+
 取消这一行的注释——如果没有这一行则手动添加之：
 
     X11Forwrding yes
